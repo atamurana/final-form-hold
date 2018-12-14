@@ -1,14 +1,27 @@
 {
   "name": "final-form-hold",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Array Mutators for 🏁Final Form",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "scripts": {
+    "prepublish": "node_modules/babel-cli/bin/babel.js src --out-dir dist"
   },
   "keywords": [
     "final-form"
   ],
   "author": "atamurana <atamurana@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "peerDependencies": {
+    "final-form": ">=1.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.3.0"
+  }
 }

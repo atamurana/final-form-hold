@@ -1,0 +1,75 @@
+{
+  "extends": [
+    "airbnb"
+  ],
+  "globals": {
+    "document": true,
+    "FormData": true,
+    "window": true,
+    "fetch": true,
+    "it": true
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "arrow-parens": [
+      "error",
+      "always",
+      {
+        "requireForBlockBody": true
+      }
+    ],
+    "object-curly-newline": ["error", {
+      "ObjectExpression": { "minProperties": 8, "multiline": true, "consistent": true },
+      "ObjectPattern": { "minProperties": 8, "multiline": true, "consistent": true }
+    }],
+    "function-paren-newline": ["error", "consistent"],
+    "jsx-a11y/anchor-is-valid": [
+      2,
+      {
+        "aspects": [
+          "noHref",
+          "invalidHref",
+          "preferButton"
+        ],
+        "components": [
+          "Link"
+        ],
+        "specialLink": [
+          "hrefLeft",
+          "hrefRight",
+          "to"
+        ]
+      }
+    ],
+    "jsx-a11y/href-no-hash": 0,
+    "jsx-quotes": 0,
+    "max-len": [
+      1,
+      120,
+      4
+    ],
+    "no-underscore-dangle": ["error", { "allow": ["_d", "__"] }],
+    "no-use-before-define": 0,
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [
+          ".js"
+        ]
+      }
+    ],
+    "react/jsx-first-prop-new-line": 0,
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": [
+          "node_modules",
+          "src/"
+        ]
+      }
+    }
+  }
+}
