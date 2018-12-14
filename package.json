@@ -1,6 +1,6 @@
 {
   "name": "final-form-hold",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Array Mutators for 🏁Final Form",
   "main": "dist/index.js",
   "scripts": {
