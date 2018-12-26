@@ -24,7 +24,7 @@ import holdMutators from 'final-form-hold';
 
 // Create Form
 const form = createForm({
-  mutators: { ...arrayMutators },
+  mutators: { ...holdMutators },
   onSubmit,
 });
 
@@ -42,8 +42,8 @@ form.mutators.unhold('customer');
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 - [Mutators](#mutators)
-  - [`form.mutators.hold(name: string) => undefined`](#formmutatorsholdname-string--undefined)
-  - [`form.mutators.unhold(name: string) => undefined`](#formmutatorsunholdname-string--undefined)
+  - [`form.mutators.hold(name: string) => undefined`](#user-content-formmutatorsholdname-string--undefined)
+  - [`form.mutators.unhold(name: string) => undefined`](#user-content-formmutatorsunholdname-string--undefined)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
